@@ -773,7 +773,7 @@ class TrueNASControllerData(object):
         self.data["disk"] = parse_api(
             data=self.data["disk"],
             source=self.api.query("disk"),
-            key="devname",
+            key="serial",
             vals=[
                 {"name": "name", "default": "unknown"},
                 {"name": "devname", "default": "unknown"},
